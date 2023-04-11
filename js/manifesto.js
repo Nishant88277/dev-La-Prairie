@@ -49,7 +49,6 @@ const openDoorTimeline = gsap.timeline({
 		trigger: '.door',
 		start: 'center center',
 		scrub: 1,
-		markers:true
 	}
 });
 openDoorTimeline.to('.left-door',{
