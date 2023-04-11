@@ -150,3 +150,25 @@ picture .lp-manifesto-media {
   right: 0;
   top: 0;
 }
+
+.door{
+  display: flex;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+.left-door{
+  height: 100%;
+  width: 50%;
+  background-color: blue;
+  /* border: 1px solid blue; */
+  transform-origin: left;
+}
+.right-door{
+  height: 100%;
+  width: 50%;
+  background-color: red;
+  /* border: 1px solid red; */
+  transform-origin: right;
+}
