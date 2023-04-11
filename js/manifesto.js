@@ -54,12 +54,12 @@ const openDoorTimeline = gsap.timeline({
 openDoorTimeline.to('.left-door',{
 	duration:.5,
 	rotationY: '-90deg',
-	skewY: 30,
+	skewY: 20,
 	ease: Power0.easeNone,
 })
 .to('.right-door',{
 	duration:.5,
 	rotationY: '90deg',
-	skewY: -30,
+	skewY: -20,
 	ease: Power0.easeNone,
 },0)
