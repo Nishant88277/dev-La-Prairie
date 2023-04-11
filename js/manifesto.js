@@ -48,14 +48,19 @@ const openDoorTimeline = gsap.timeline({
 	scrollTrigger:{
 		trigger: '.door',
 		start: 'center center',
-		scrub: 1
+		scrub: 1,
+		markers:true
 	}
 });
 openDoorTimeline.to('.left-door',{
 	duration:.5,
-	rotationY: '-90deg'
+	rotationY: '-90deg',
+	skewY: 30,
+	ease: Power0.easeNone,
 })
 .to('.right-door',{
 	duration:.5,
-	rotationY: '90deg'
+	rotationY: '90deg',
+	skewY: -30,
+	ease: Power0.easeNone,
 },0)
