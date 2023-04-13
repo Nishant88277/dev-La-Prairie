@@ -42,24 +42,3 @@ Array.from(document.querySelectorAll('.lr-manifesto-container')).forEach((manife
 	      }
 	}, "1");
 });
-
-
-const openDoorTimeline = gsap.timeline({
-	scrollTrigger:{
-		trigger: '.door',
-		start: 'center center',
-		scrub: 1,
-	}
-});
-openDoorTimeline.to('.left-door',{
-	duration:.5,
-	rotationY: '-90deg',
-	skewY: 20,
-	ease: Power0.easeNone,
-})
-.to('.right-door',{
-	duration:.5,
-	rotationY: '90deg',
-	skewY: -20,
-	ease: Power0.easeNone,
-},0)
