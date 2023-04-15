@@ -2,7 +2,7 @@ const updateMedia = (animation, container, history) => {
 	
 	if (container.getBoundingClientRect().top > -1 && container.classList.contains('locked-bottom')) {
 		container.classList.add('locked');
-		container.classList.remove('locked-bottom');
+		// container.classList.remove('locked-bottom');
 	}
 	document.querySelector(':root').style.setProperty('--pseudo-history-bar',(Math.max(0,(history.querySelector('.history-line-area').offsetHeight*animation.progress)-(window.innerHeight/2)))+'px');
 }
@@ -12,11 +12,11 @@ Array.from(document.querySelectorAll('.history-section')).forEach((history)=>{
 	tl.to(container, {
 		onStart: () => {
 			container.classList.add('locked');
-			container.classList.remove('locked-bottom')
+			// container.classList.remove('locked-bottom')
 		},
 		onComplete: () => {
-			container.classList.remove('locked');
-			container.classList.add('locked-bottom')
+			// container.classList.remove('locked');
+			// container.classList.add('locked-bottom')
 		},
 		onReverseComplete: () => {
 			container.classList.remove('locked')

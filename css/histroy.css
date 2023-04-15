@@ -18,10 +18,10 @@
   top: 0;
 }
 
-.lp-history-media-container.locked-bottom {
+/* .lp-history-media-container.locked-bottom {
   position: absolute;
   bottom: 0;
-}
+} */
 .history-basic {
   z-index: 1;
   text-align: center;
