@@ -70,7 +70,6 @@ Array.from(document.querySelectorAll('.history-section')).forEach((history)=>{
 	});
 });
 
-
 // image scroll-up animation
 
 const firstImage = document.querySelector('.lp-manifesto-media-container')
